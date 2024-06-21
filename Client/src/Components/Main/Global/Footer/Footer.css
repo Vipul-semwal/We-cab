@@ -1,0 +1,50 @@
+/* footer */
+.footer {
+  margin-top: 200px;
+  background-color: #000000;
+  padding-top: 40px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer .line {
+  height: 3px;
+  border-radius: 8px;
+  width: 80px;
+  background-color: #ee408a;
+}
+
+.footer-cover {
+  padding: 30px 80px;
+}
+
+.copy-right {
+  background-color: #272829;
+}
+.copy-right p {
+  font-size: 14px;
+}
+
+.footer-social-email input {
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.email {
+  background-color: white;
+  color: #ee408a;
+  font-size: 13px;
+  padding: 10px 30px;
+  border: 2px solid #ee408a;
+  border-radius: 20px;
+}
+
+/* footer end */
+@media all and (max-width: 426px) {
+  .footer-cover {
+    padding: 30px 39px;
+  }
+}

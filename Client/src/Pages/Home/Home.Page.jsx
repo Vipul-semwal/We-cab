@@ -1,12 +1,27 @@
-import React from 'react'
-import { Banner, Slider } from '../../Components/export'
+import React from "react";
+import {
+  Banner,
+  Faq,
+  MapImg,
+  SecordBanner,
+  Testimonial,
+  Things,
+  Timeline,
+  WhyChose,
+} from "../../Components/export";
 function HomePage() {
-    return (
-        <>
-            <Banner />
-            <Slider />
-        </>
-    )
+  return (
+    <>
+      <Banner />
+      <Timeline />
+      <WhyChose />
+      <Testimonial />
+      <MapImg />
+      <SecordBanner />
+      <Things />
+      <Faq />
+    </>
+  );
 }
 
-export default HomePage
+export default HomePage;

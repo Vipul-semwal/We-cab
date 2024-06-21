@@ -1,0 +1,71 @@
+.again {
+  height: 66vh;
+  background: url("/Utility/again.png") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.again .enters2 {
+  /* position: absolute; */
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  bottom: 73px;
+  right: 40px;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: white;
+  height: auto;
+}
+
+.again h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.banner-info {
+  padding: 0px 20px;
+}
+
+@media screen and (max-width: 1072px) {
+  .again h2 {
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .again h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .again .enters2 {
+    position: absolute;
+    width: 100%;
+    /* display: none; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    bottom: -252px;
+    right: 0px;
+    border-radius: 15px;
+    padding: 17px;
+    background-color: white;
+    height: auto;
+  }
+
+  .again {
+    height: 45vh;
+    /* background: url(/photo/again.png) no-repeat center; */
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 20px;
+  }
+}

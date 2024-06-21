@@ -1,0 +1,63 @@
+.navbar li {
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 13px 134px;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar i {
+  color: #ee408a;
+}
+
+.hidden-menus {
+  z-index: 80;
+  width: 100%;
+  right: -100%; /* Start off-screen */
+  top: 70px;
+  transition: right 0.3s ease; /* Transition for right property */
+  display: none;
+}
+
+.hidden-menus.active {
+  display: block;
+  right: 0; /* Slide in to show */
+}
+
+.logo {
+  width: 90px;
+}
+
+.menu {
+  display: none;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 1072px) {
+  .navbar {
+    padding: 10px 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: block;
+    color: #ee408a;
+  }
+  .navbar li {
+    display: none;
+  }
+
+  .fix-navbar {
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    border-radius: 0px;
+    background: transparent;
+    width: 100%;
+    padding: 10px 40px;
+  }
+}

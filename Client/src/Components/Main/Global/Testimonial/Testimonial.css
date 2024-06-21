@@ -1,0 +1,82 @@
+.test-box {
+  height: 32rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.test-box i {
+  font-size: 43px;
+}
+
+.test1 {
+  background: url(/Utility/test2.jpg), no-repeat, center;
+  background-size: cover;
+}
+
+.test2 {
+  background: url(/Utility/test1.jpg), no-repeat, center;
+  background-size: cover;
+}
+
+.test3 {
+  background: url(/Utility/test3.jpg), no-repeat, center;
+  background-size: cover;
+}
+
+.test-box h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1072px) {
+  .why-img {
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .test-box i {
+    font-size: 18px;
+  }
+
+  .test-box h3 {
+    font-size: 17px;
+  }
+
+  .test-box p {
+    font-size: 12px;
+  }
+
+  .test-box {
+    height: 24rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .test-box {
+    height: 25rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .why h2 {
+    font-weight: 600;
+    font-size: 20px;
+    /* padding: 10px; */
+    padding-left: 17px;
+  }
+
+  .test-box p {
+    font-size: 12px;
+  }
+
+  .test-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .test-box i {
+    font-size: 28px;
+  }
+}

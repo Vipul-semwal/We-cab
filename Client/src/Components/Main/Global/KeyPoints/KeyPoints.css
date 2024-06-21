@@ -1,0 +1,10 @@
+@media screen and (max-width: 490px) {
+  .pink-point p {
+    font-size: 12px;
+  }
+
+  .pink-point {
+    justify-content: start;
+    padding: 30px 12px;
+  }
+}

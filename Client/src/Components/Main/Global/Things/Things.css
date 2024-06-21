@@ -1,0 +1,49 @@
+.things {
+  background: #ffe7f1;
+  margin: 100px 0px;
+  padding: 80px;
+  /* padding: 82px 237px; */
+}
+
+.things h3 {
+  font-weight: 600;
+  font-size: 17px;
+}
+.things p {
+  text-align: center;
+}
+
+.boxes {
+  width: 230px;
+  margin: 0px 14px;
+}
+.boxes img {
+  width: 60px;
+}
+
+.things p {
+  font-size: 14px;
+}
+@media all and (max-width: 768px) {
+  .things {
+    background: #ffe7f1;
+    margin: 74px 0px;
+    padding: 49px;
+    /* padding: 82px 237px; */
+  }
+  .things p {
+    font-size: 11px;
+  }
+  .things h3 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 426px) {
+  .thingsto {
+    background: #ffe7f1;
+    margin-top: 315px;
+    padding: 43px;
+    /* padding: 82px 237px; */
+  }
+}

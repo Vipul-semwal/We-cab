@@ -1,0 +1,112 @@
+.pinkcard img {
+  width: 100px;
+}
+
+.fatherofpink {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.fatherofpink h3 {
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.fatherofpink i {
+  margin-right: 20px;
+}
+
+.fatherofpink li {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pinkcard {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 246px;
+  padding: 20px;
+  background-color: #ee408a;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 8px;
+}
+
+.pinkno {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 246px;
+  padding: 20px;
+  min-height: 316px;
+  background-color: #fefefe;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(60, 60, 60);
+  border-radius: 8px;
+}
+
+.pinkno img {
+  width: 70px;
+}
+
+@media screen and (max-width: 490px) {
+  .fatherofpink h3 {
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .pinkno {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 197px;
+    padding: 20px;
+    min-height: 270px;
+    background-color: #fefefe;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(60, 60, 60);
+    border-radius: 8px;
+  }
+
+  .pink-point p {
+    font-size: 12px;
+  }
+
+  .pink-point {
+    justify-content: start;
+    padding: 30px 12px;
+  }
+
+  .pinkcard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 188px;
+    padding: 20px;
+    background-color: #ee408a;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .fatherofpink li {
+    margin-bottom: 10px;
+  }
+
+  .pinkcard img {
+    width: 74px;
+  }
+}

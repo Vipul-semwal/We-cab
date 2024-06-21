@@ -1,0 +1,16 @@
+.map-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.map-img img {
+  width: 70%;
+}
+
+@media screen and (max-width: 560px) {
+  .map-img img {
+    width: 100%;
+  }
+}

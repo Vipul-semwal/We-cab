@@ -7,15 +7,16 @@ const AdminSchema = new mongoose.Schema({
         type: String,
         required: [true, "name cannot be empty"],
     },
-    type: {
+    role: {
         type: String,
-        required: [true, 'type is required']
+        required: [true, 'Role is required'],
+        enum: ['superadmin', 'admin', 'moderator'],
     }
     ,
     email: {
         type: String,
         required: [true, "email cannot be empty"],
-        match: [/^\S+@\S+\.\S+$/, 'Please use a valid email address'],
+        match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Please use a valid email address'],
         unique: true,
     },
     password: {
@@ -25,6 +26,9 @@ const AdminSchema = new mongoose.Schema({
     },
     status: {
         type: String,
+    },
+    refreshToken: {
+        type: String
     }
     ,
     profile_pic: {

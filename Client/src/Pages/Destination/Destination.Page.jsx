@@ -23,6 +23,7 @@ function DestinationPage() {
       <Things />
       <PinkCards />
       <Faq />
+      {/* <SilderCards /> */}
     </>
   );
 }

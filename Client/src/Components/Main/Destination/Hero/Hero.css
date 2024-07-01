@@ -11,94 +11,8 @@
   font-size: 35px;
 }
 
-.car-box {
-  width: 50%;
-  height: auto;
-  background-color: #ffe7f1;
-  border-radius: 8px;
-  padding: 40px;
-}
-
-.bar-info {
-  background: white;
-  border-radius: 8px;
-  width: 400px;
-  padding: 10px;
-}
-
-.bar-info p {
-  font-size: 14px;
-  color: rgb(211, 211, 211);
-}
-
-.bar-info i {
-  font-size: 14px;
-}
-
-.upper-part {
-  margin-bottom: 30px;
-}
-
-.upper-part h3 {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.upper-part h3 span {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.icons-car {
-  font-size: 16px;
-}
-
-.icons-car i {
-  font-size: 11px;
-}
-
-.checks {
-  font-size: 11px;
-}
-
-.pink-btn {
-  padding: 10px;
-  font-size: 18px;
-  color: white;
-  background-color: #ee408a;
-  border-radius: 8px;
-  font-weight: 600;
-  width: 50%;
-}
-
 /*  */
-.unbtn {
-  width: 50%;
-  font-weight: 500;
-}
 
-.car-back {
-  width: 100%;
-}
-.bar-info {
-  gap: 10px;
-}
-
-.cover-car h5 {
-  text-align: start;
-}
-
-.upper-part {
-  margin-top: 20px;
-}
-
-.main-banner {
-  gap: 30px;
-}
-
-.car-back {
-  margin-top: 40px;
-}
 @media screen and (max-width: 1072px) {
   .main-banner {
     padding: 20px 34px;
@@ -110,21 +24,12 @@
   .main-banner {
     padding: 20px 15px;
   }
-  .bar-info {
-    background: white;
-    border-radius: 8px;
-    width: 249px;
-    padding: 10px;
-  }
 
-  .bar-info i {
+  .bar-info svg {
     font-size: 11px;
     margin: 0px 4px;
   }
-  .bar-info p {
-    font-size: 9px;
-    color: rgb(211, 211, 211);
-  }
+
   .upper-part h3 span {
     font-size: 18px;
     font-weight: 400;
@@ -134,11 +39,11 @@
     font-weight: 600;
   }
 
-  .bar-info i {
+  .bar-info svg {
     font-size: 11px;
   }
 
-  .upper-part i {
+  .upper-part svg {
     font-size: 12px;
   }
 
@@ -212,21 +117,7 @@
     width: 100%;
     margin-top: 20px;
   }
-  .bar-info {
-    background: white;
-    border-radius: 8px;
-    width: 249px;
-    padding: 10px;
-  }
 
-  .bar-info i {
-    font-size: 11px;
-    margin: 0px 4px;
-  }
-  .bar-info p {
-    font-size: 9px;
-    color: rgb(211, 211, 211);
-  }
   .upper-part h3 span {
     font-size: 18px;
     font-weight: 400;
@@ -236,11 +127,7 @@
     font-weight: 600;
   }
 
-  .bar-info i {
-    font-size: 11px;
-  }
-
-  .upper-part i {
+  .upper-part svg {
     font-size: 12px;
   }
 
@@ -250,10 +137,6 @@
 
   .upper-part {
     margin-bottom: 15px;
-  }
-  .bar-info p {
-    font-size: 9px;
-    color: rgb(211, 211, 211);
   }
 
   .pink-btn {
@@ -275,11 +158,6 @@
     padding: 10px;
     width: 100%;
   }
-  .bar-info p {
-    font-size: 9px;
-    margin: 3px;
-    color: rgb(211, 211, 211);
-  }
 
   .car-back {
     width: 91%;
@@ -289,13 +167,6 @@
     gap: 0px;
   }
 
-  .car-box {
-    width: 50%;
-    height: auto;
-    background-color: #ffe7f1;
-    border-radius: 8px;
-    padding: 20px;
-  }
   .unbtn {
     width: 50%;
     font-size: 9px;

@@ -31,12 +31,12 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/cars">
+            <Link to="/booking">
               <h5>Cars</h5>
             </Link>
           </li>
           <li>
-            <Link to="/blogs">
+            <Link to="/overview">
               <h5>Blogs</h5>
             </Link>
           </li>
@@ -65,7 +65,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/cars">
+            <Link to="/booking">
               <h5>Cars</h5>
             </Link>
           </li>

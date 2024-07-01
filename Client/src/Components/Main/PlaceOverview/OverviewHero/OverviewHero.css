@@ -1,0 +1,45 @@
+.hero-main {
+  height: 40vh;
+}
+
+.hero-pink {
+  height: 20vh;
+  background-color: #ee408a;
+  width: 100%;
+}
+
+.diffrent {
+  background-color: white;
+  position: absolute;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.diffrent h2 {
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.single-diff-input input:focus {
+  border: none; /* Remove border on focus */
+  outline: none; /* Remove outline */
+}
+
+.single-diff-input {
+  font-size: 14px;
+  padding: 10px;
+  /* padding-left: 20px; */
+  background-color: #f3f3f3;
+}
+
+.single-diff-input input {
+  font-size: 14px;
+  width: 100%;
+  /* padding: 10px; */
+  /* padding-left: 20px; */
+  background-color: #f3f3f3;
+}

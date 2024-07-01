@@ -10,7 +10,7 @@ import {
   FaClock,
 } from "react-icons/fa";
 import "./Banner.css";
-
+import { FaMapPin } from "react-icons/fa6";
 function Banner() {
   const [mode, setMode] = useState("outstation");
 
@@ -55,12 +55,12 @@ function Banner() {
             {mode === "outstation" && (
               <>
                 <div className="input-search relative" id="inputFrom">
-                  <FaMapMarkerAlt className="pin" />
+                  <FaMapPin className="pin" />
                   <input className="input-se" placeholder="From" type="text" />
                   <FaExchangeAlt className="swap" />
                 </div>
                 <div className="input-search relative" id="inputTo">
-                  <FaMapMarkerAlt className="pin" />
+                  <FaMapPin className="pin" />
                   <input
                     className="input-se w-full"
                     placeholder="To"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaMapPin,
   FaArrowRight,
@@ -7,9 +7,17 @@ import {
 } from "react-icons/fa";
 import "./BookHero.css";
 import CarCard from "../../Global/CarCard/CarCard";
-
 import BlackBtn from "../../Global/BlackBtn/BlackBtn";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css"; // Import styles for react-phone-input-2
+
 function BookHero() {
+  const [phone, setPhone] = useState("");
+
+  const handlePhoneChange = (value, country) => {
+    setPhone(value); // Store the entered phone number
+  };
+
   return (
     <section className="main-banner flex flex-col mt-10 lg:flex-row items-center justify-center">
       <div className="cover-car flex flex-col justify-center w-full lg:w-1/2">
@@ -17,13 +25,36 @@ function BookHero() {
         <p>Finalize your booking in just a few clicks.</p>
         <div className="inputs-main hidden-inputs w-[70%]">
           <div className="input-search">
+            {/* Replace with PhoneInput component */}
+            <PhoneInput
+              country={"us"} // Initial country selection
+              value={phone}
+              onChange={handlePhoneChange}
+              placeholder="Enter your phone number"
+              inputProps={{
+                name: "phone",
+                required: true,
+                autoFocus: true,
+                className: "input-se", // Apply custom class
+                style: {
+                  padding: "12px",
+                  backgroundColor: "#f3f3f3",
+                  border: "none",
+                  borderRadius: "8px",
+                  fontSize: "13px",
+                  outline: "none",
+                  paddingLeft: "40px",
+                  width: "100%",
+                },
+              }}
+            />
+
             <input
               className="input-se pl-[23px] mt-3"
               placeholder="Enter your email"
               type="text"
             />
           </div>
-
           <BlackBtn title={"Next"} />
         </div>
       </div>
@@ -41,10 +72,16 @@ function BookHero() {
             </div>
 
             <div className="input-search">
-              <input
-                className="input-se1"
+              <PhoneInput
+                country={"us"} // Initial country selection
+                value={phone}
+                onChange={handlePhoneChange}
                 placeholder="Enter Phone no."
-                type="text"
+                inputProps={{
+                  name: "phone",
+                  required: true,
+                  autoFocus: true,
+                }}
               />
             </div>
           </div>

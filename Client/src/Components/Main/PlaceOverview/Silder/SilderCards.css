@@ -1,0 +1,40 @@
+/* .p-card-img {
+  margin: 0px 10px;
+} */
+
+/* .slider-big {
+  margin-bottom: 40px;
+  overflow: hidden;
+} */
+/* SilderCards.css */
+.slider-container {
+  padding: 0 15px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.slider-item {
+  padding: 0 10px; /* Adjust this value to increase/decrease the gap between cards */
+}
+
+.slider-item:focus {
+  padding: 0 10px; /* Adjust this value to increase/decrease the gap between cards */
+}
+
+.cardImg {
+  width: 100%;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Optional: Add some basic styles for the h3 elements */
+.slider-item h3 {
+  font-weight: 600;
+  /* text-align: center; */
+  margin-top: 10px;
+}
+
+.slider-item p {
+  color: gray;
+}

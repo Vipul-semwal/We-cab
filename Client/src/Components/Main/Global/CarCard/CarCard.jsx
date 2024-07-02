@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa";
 import { FaMapPin } from "react-icons/fa6";
 import "./CarCard.css";
-function CarCard() {
+
+function CarCard({ onMoreOptionsClick }) {
   return (
     <div className="car-box w-full lg:w-1/2 mt-5 lg:mt-0">
       <div className="bar-info p-3 flex items-center justify-center">
@@ -48,8 +49,14 @@ function CarCard() {
               <p>Best for Small Family</p>
             </div>
           </div>
+          <h1
+            className="font-semibold popup-h1 cursor-pointer text-pink-500 mt-4"
+            onClick={onMoreOptionsClick}
+          >
+            More options from $193
+          </h1>
         </div>
-        <div className="car-back ">
+        <div className="car-back">
           <img src="/Utility/cars.png" width="100%" alt="" />
         </div>
       </div>

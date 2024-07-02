@@ -72,16 +72,10 @@ function BookHero() {
             </div>
 
             <div className="input-search">
-              <PhoneInput
-                country={"us"} // Initial country selection
-                value={phone}
-                onChange={handlePhoneChange}
-                placeholder="Enter Phone no."
-                inputProps={{
-                  name: "phone",
-                  required: true,
-                  autoFocus: true,
-                }}
+              <input
+                className="input-se1"
+                placeholder="Phone Number"
+                type="tel"
               />
             </div>
           </div>

@@ -104,6 +104,10 @@
     color: rgb(128 128 128);
   }
 
+  .popup-h1 {
+    font-size: 12px;
+  }
+
   .upper-part h3 span {
     font-size: 18px;
     font-weight: 400;

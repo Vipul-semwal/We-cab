@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaMapMarkerAlt,
   FaExchangeAlt,
@@ -8,12 +8,22 @@ import {
   FaClock,
   FaArrowRight,
 } from "react-icons/fa";
-
 import { FaMapPin } from "react-icons/fa6";
 import "./Hero.css"; // Ensure this file exists and contains the necessary CSS
 import CarCard from "../../Global/CarCard/CarCard";
+import CarsPopUp from "../../Global/CarsPopUp/CarsPopUp";
 
 function Hero() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handlePopupOpen = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <section className="main-banner flex flex-col mt-14 lg:flex-row items-center justify-center">
       <div className="cover-car flex flex-col justify-center w-full lg:w-1/2">
@@ -50,8 +60,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      {/* down card */}
-      <CarCard />
+      <CarCard onMoreOptionsClick={handlePopupOpen} />
+      {isPopupOpen && <CarsPopUp onClose={handlePopupClose} />}
     </section>
   );
 }

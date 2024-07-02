@@ -32,7 +32,7 @@ function CarsPopUp({ onClose }) {
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between gap-5">
                   <div className="flex items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">
@@ -71,7 +71,7 @@ function CarsPopUp({ onClose }) {
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between gap-5">
                   <div className="flex items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">
@@ -149,7 +149,7 @@ function CarsPopUp({ onClose }) {
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between gap-5">
                   <div className="flex items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">

@@ -3,20 +3,26 @@ import "./CarsPopUp.css";
 import {
   FaMapMarkerAlt,
   FaUserFriends,
+  FaShoppingBag,
   FaSuitcaseRolling,
   FaArrowRight,
 } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 function CarsPopUp({ onClose }) {
   return (
     <div className="background-pop">
-      <div className="body-pop">
-        <h1 className="font-semibold text-start">Select your ride</h1>
+      <div className="body-pop ">
+        <div className="flex justify-between items-center">
+          <h1 className="font-semibold text-start">Select your ride</h1>
+          <ImCross onClick={onClose} />
+        </div>
+
         <hr />
 
         <div>
           <div className="cars-rows flex items-center px-5 py-5">
             <input type="radio" className="text-pink-600 mr-3" />
-            <div className="flex justify-between gap-10 items-center mr-4">
+            <div className="flex justify-between gap-10 items-center mr-6">
               <h2 className="text-3xl font-normal">$124</h2>
               <img src="/Utility/car0.png" width="180px" alt="" />
             </div>
@@ -28,12 +34,12 @@ function CarsPopUp({ onClose }) {
               </div>
 
               <div className="down-pop gap-9 flex justify-between items-center">
-                <div className="flex flex-col items-start">
+                <div className="flex para-pop flex-col items-start">
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between gap-5">
-                  <div className="flex items-center flex-col">
+                <div className="flex justify-between gap-10">
+                  <div className="flex again-para-pop items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">
                       <FaUserFriends />
@@ -41,10 +47,13 @@ function CarsPopUp({ onClose }) {
                     </div>
                   </div>
 
-                  <div className="flex items-center flex-col">
-                    <p>Luggage</p>
-                    <div className="flex items-center">
+                  <div className="flex again-para-pop items-center flex-col">
+                    <p>Luggage (Up to)</p>
+                    <div className="flex items-center gap-2">
                       <FaSuitcaseRolling />
+                      <p>3x</p>
+
+                      <FaShoppingBag />
                       <p>3x</p>
                     </div>
                   </div>
@@ -55,7 +64,7 @@ function CarsPopUp({ onClose }) {
 
           <div className="cars-rows flex items-center px-5 py-5">
             <input type="radio" className="text-pink-600 mr-3" />
-            <div className="flex justify-between gap-10 items-center mr-4">
+            <div className="flex justify-between gap-10 items-center mr-6">
               <h2 className="text-3xl font-normal">$124</h2>
               <img src="/Utility/car3.png" width="180px" alt="" />
             </div>
@@ -67,12 +76,12 @@ function CarsPopUp({ onClose }) {
               </div>
 
               <div className="down-pop gap-9 flex justify-between items-center">
-                <div className="flex flex-col items-start">
+                <div className="flex para-pop flex-col items-start">
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between gap-5">
-                  <div className="flex items-center flex-col">
+                <div className="flex justify-between gap-10">
+                  <div className="flex again-para-pop items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">
                       <FaUserFriends />
@@ -80,10 +89,13 @@ function CarsPopUp({ onClose }) {
                     </div>
                   </div>
 
-                  <div className="flex items-center flex-col">
-                    <p>Luggage</p>
-                    <div className="flex items-center">
+                  <div className="flex again-para-pop items-center flex-col">
+                    <p>Luggage (Up to)</p>
+                    <div className="flex items-center gap-2">
                       <FaSuitcaseRolling />
+                      <p>3x</p>
+
+                      <FaShoppingBag />
                       <p>3x</p>
                     </div>
                   </div>
@@ -94,7 +106,7 @@ function CarsPopUp({ onClose }) {
 
           <div className="cars-rows flex items-center px-5 py-5">
             <input type="radio" className="text-pink-600 mr-3" />
-            <div className="flex justify-between gap-10 items-center mr-4">
+            <div className="flex justify-between gap-10 items-center mr-6">
               <h2 className="text-3xl font-normal">$124</h2>
               <img src="/Utility/car1.png" width="180px" alt="" />
             </div>
@@ -106,12 +118,12 @@ function CarsPopUp({ onClose }) {
               </div>
 
               <div className="down-pop gap-9 flex justify-between items-center">
-                <div className="flex flex-col items-start">
+                <div className="flex para-pop flex-col items-start">
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between gap-5">
-                  <div className="flex items-center flex-col">
+                <div className="flex justify-between gap-10">
+                  <div className="flex again-para-pop items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">
                       <FaUserFriends />
@@ -119,10 +131,13 @@ function CarsPopUp({ onClose }) {
                     </div>
                   </div>
 
-                  <div className="flex items-center flex-col">
-                    <p>Luggage</p>
-                    <div className="flex items-center">
+                  <div className="flex again-para-pop items-center flex-col">
+                    <p>Luggage (Up to)</p>
+                    <div className="flex items-center gap-2">
                       <FaSuitcaseRolling />
+                      <p>3x</p>
+
+                      <FaShoppingBag />
                       <p>3x</p>
                     </div>
                   </div>
@@ -133,7 +148,7 @@ function CarsPopUp({ onClose }) {
 
           <div className="cars-rows flex items-center px-5 py-5">
             <input type="radio" className="text-pink-600 mr-3" />
-            <div className="flex justify-between gap-10 items-center mr-4">
+            <div className="flex justify-between gap-10 items-center mr-6">
               <h2 className="text-3xl font-normal">$124</h2>
               <img src="/Utility/car0.png" width="180px" alt="" />
             </div>
@@ -145,12 +160,12 @@ function CarsPopUp({ onClose }) {
               </div>
 
               <div className="down-pop gap-9 flex justify-between items-center">
-                <div className="flex flex-col items-start">
+                <div className="flex para-pop flex-col items-start">
                   <p>Comparable to a</p>
                   <h4 className="">Audi</h4>
                 </div>
-                <div className="flex justify-between gap-5">
-                  <div className="flex items-center flex-col">
+                <div className="flex justify-between gap-10">
+                  <div className="flex again-para-pop items-center flex-col">
                     <p>Passengers</p>
                     <div className="flex items-center">
                       <FaUserFriends />
@@ -158,10 +173,13 @@ function CarsPopUp({ onClose }) {
                     </div>
                   </div>
 
-                  <div className="flex items-center flex-col">
-                    <p>Luggage</p>
-                    <div className="flex items-center">
+                  <div className="flex again-para-pop items-center flex-col">
+                    <p>Luggage (Up to)</p>
+                    <div className="flex items-center gap-2">
                       <FaSuitcaseRolling />
+                      <p>3x</p>
+
+                      <FaShoppingBag />
                       <p>3x</p>
                     </div>
                   </div>

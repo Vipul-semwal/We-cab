@@ -45,9 +45,9 @@ function SecordBanner() {
 
           <div
             className={`inputs-main grid ${
-              mode === "sightseeing"
-                ? "grid-cols-2 sm:grid-cols-2"
-                : "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3"
+              mode === "sightseeing" || mode === "outstation"
+                ? "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3"
+                : "grid-cols-2 sm:grid-cols-2"
             } gap-5`}
             id="inputsContainer"
           >
@@ -97,6 +97,26 @@ function SecordBanner() {
                 <div className="input-search relative">
                   <FaCalendarAlt className="pin" />
                   <input className="input-se" placeholder="Date" type="date" />
+                </div>
+                <div className="input-search relative">
+                  <FaUsers className="pin" />
+                  <input
+                    className="input-se"
+                    placeholder="Passengers"
+                    type="text"
+                  />
+                </div>
+                <div className="input-search relative">
+                  <FaSuitcaseRolling className="pin" />
+                  <input
+                    className="input-se"
+                    placeholder="Luggage"
+                    type="text"
+                  />
+                </div>
+                <div className="input-search relative">
+                  <FaClock className="pin" />
+                  <input className="input-se" placeholder="Time" type="time" />
                 </div>
               </>
             )}

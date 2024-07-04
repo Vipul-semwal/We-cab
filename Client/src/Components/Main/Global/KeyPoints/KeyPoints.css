@@ -1,3 +1,7 @@
+.pink-point p {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 490px) {
   .pink-point p {
     font-size: 12px;

@@ -25,7 +25,7 @@ function Hero() {
   };
 
   return (
-    <section className="main-banner flex flex-col mt-14 lg:flex-row items-center justify-center">
+    <section className="main-banner flex mt-14 lg:flex-row items-center justify-center">
       <div className="cover-car flex flex-col justify-center w-full lg:w-1/2">
         <h2>Your Route Details</h2>
         <div className="inputs-main grid grid-cols-2 mt-5 lg:grid-cols-3 gap-5 w-full">

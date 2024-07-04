@@ -84,13 +84,23 @@
 .car-back {
   margin-top: 40px;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   .bar-info {
     background: white;
     border-radius: 8px;
     width: 100%;
     gap: 0px;
     padding: 10px 3px;
+  }
+
+  .pink-btn {
+    padding: 6px;
+    font-size: 12px;
+    color: white;
+    background-color: #ee408a;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 50%;
   }
 
   .bar-info svg {

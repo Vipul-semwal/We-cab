@@ -9,6 +9,35 @@
   background-color: rgb(255, 255, 255);
 }
 
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li h5 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.navbar ul li h5::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ee408a; /* Change this to your desired underline color */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar ul li h5:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .navbar i {
   color: #ee408a;
 }
@@ -16,15 +45,23 @@
 .hidden-menus {
   z-index: 80;
   width: 100%;
-  right: -100%; /* Start off-screen */
+  right: 0;
   top: 70px;
-  transition: right 0.3s ease; /* Transition for right property */
-  display: none;
+
+  background-color: #f97ab1;
+  position: fixed;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(100%); /* Start off-screen to the right */
+  opacity: 0;
+}
+
+.hidden-menus h5 {
+  font-weight: 500;
 }
 
 .hidden-menus.active {
-  display: block;
-  right: 0; /* Slide in to show */
+  transform: translateX(0); /* Slide in to show */
+  opacity: 1;
 }
 
 .logo {

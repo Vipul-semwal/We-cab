@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (max-width: 440px) {
+  .banner-info {
+    margin-bottom: 296px;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .again .enters2 {
     position: absolute;

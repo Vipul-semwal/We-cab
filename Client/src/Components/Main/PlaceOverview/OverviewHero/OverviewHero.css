@@ -43,3 +43,9 @@
   /* padding-left: 20px; */
   background-color: #f3f3f3;
 }
+
+@media screen and (max-width: 786px) {
+  .hero-main {
+    display: none;
+  }
+}

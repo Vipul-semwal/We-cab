@@ -108,6 +108,12 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 620px) {
+  .main-banner {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 490px) {
   .main-banner {
     padding: 20px 15px;

@@ -22,13 +22,15 @@ function Banner() {
     <section className="w-full main-hero relative">
       <div className="hero rounded-lg">
         <div className="content-main flex justify-center items-center flex-col">
-          <h1 className="main-head">
-            Book your first car rental through <br />
-            our app and get up to 25% off!
+          <h1 className="main-head p-3">
+            Ride with We <span className="text-pink-400">Care </span>Cab: Your
+            Trusted
+            <br />
+            Partner for Safe and Convenient Travel
           </h1>
           <button className="explore-btn mt-5">Explore Now</button>
         </div>
-        <div className="enters ">
+        <div className="enters">
           <div className="buttons w-full flex items-center justify-center gap-4 mb-4">
             <button
               className="input-btn-top"
@@ -46,9 +48,9 @@ function Banner() {
 
           <div
             className={`inputs-main grid ${
-              mode === "sightseeing"
-                ? "grid-cols-2 sm:grid-cols-2"
-                : "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3"
+              mode === "sightseeing" || mode === "outstation"
+                ? "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3"
+                : "grid-cols-2 sm:grid-cols-2"
             } gap-5`}
             id="inputsContainer"
           >
@@ -100,10 +102,26 @@ function Banner() {
             {mode === "sightseeing" && (
               <>
                 <div className="input-search relative" id="inputTo">
-                  <FaMapMarkerAlt className="pin" />
+                  <FaMapPin className="pin" />
                   <input
                     className="input-se w-full"
                     placeholder="To"
+                    type="text"
+                  />
+                </div>
+                <div className="input-search relative" id="inputPassengers">
+                  <FaUsers className="pin" />
+                  <input
+                    className="input-se"
+                    placeholder="Passengers"
+                    type="text"
+                  />
+                </div>
+                <div className="input-search relative" id="inputLuggage">
+                  <FaSuitcaseRolling className="pin" />
+                  <input
+                    className="input-se"
+                    placeholder="Luggage"
                     type="text"
                   />
                 </div>
@@ -114,6 +132,10 @@ function Banner() {
                     placeholder="Date"
                     type="date"
                   />
+                </div>
+                <div className="input-search relative" id="inputTime">
+                  <FaClock className="pin" />
+                  <input className="input-se" placeholder="Time" type="time" />
                 </div>
               </>
             )}

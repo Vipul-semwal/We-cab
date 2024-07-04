@@ -10,7 +10,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   responsive: [
     {
@@ -45,7 +45,7 @@ const settings = {
 function Testimonial() {
   return (
     <>
-      <section className="why mt-12 mb-6" id="real-test">
+      {/* <section className="why mt-12 mb-6" id="real-test">
         <div>
           <h2>Our Happy Customers</h2>
         </div>
@@ -99,7 +99,7 @@ function Testimonial() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="why  overflow-hidden mt-12 mb-6" id="fake-test">
         <div>
@@ -112,14 +112,14 @@ function Testimonial() {
             </div>
             <h3 className="mb-2">
               Excellent Service! Car
-              <span className="text-pink-400">Rent</span> Service!
+              <span className="text-pink-400">Rent </span> Service!
             </h3>
             <p>
               I have been using Rentaly for my Car Rental needs for over 5 years
               now. I have never had any problems with their service. Their
               customer support is always responsive and helpful. I would
-              recommend Rentaly to anyone looking for a reliable Car Rental
-              provider.
+              recommend Rentaly to anyone looking{" "}
+              <span className="text-pink-400"> - Priya</span>
             </p>
           </div>
           <div className="test-box test2 flex flex-col justify-end text-white bg-gray-800 rounded-lg">
@@ -134,8 +134,8 @@ function Testimonial() {
               I have been using Rentaly for my Car Rental needs for over 5 years
               now. I have never had any problems with their service. Their
               customer support is always responsive and helpful. I would
-              recommend Rentaly to anyone looking for a reliable Car Rental
-              provider.
+              recommend Rentaly to anyone looking{" "}
+              <span className="text-pink-400"> - Ashutosh Yadav</span>
             </p>
           </div>
           <div className="test-box test3 flex flex-col justify-end text-white bg-gray-800 rounded-lg">
@@ -150,8 +150,8 @@ function Testimonial() {
               I have been using Rentaly for my Car Rental needs for over 5 years
               now. I have never had any problems with their service. Their
               customer support is always responsive and helpful. I would
-              recommend Rentaly to anyone looking for a reliable Car Rental
-              provider.
+              recommend Rentaly to anyone looking
+              <span className="text-pink-400"> - Vipul Semwal</span>
             </p>
           </div>
         </Slider>

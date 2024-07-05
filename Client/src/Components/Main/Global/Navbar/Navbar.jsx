@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 function Navbar() {
@@ -31,12 +31,12 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/cars">
+            <Link to="/booking">
               <h5>Cars</h5>
             </Link>
           </li>
           <li>
-            <Link to="/blogs">
+            <Link to="/overview">
               <h5>Blogs</h5>
             </Link>
           </li>
@@ -45,14 +45,14 @@ function Navbar() {
           </li>
         </ul>
 
-        <FaBars className="menu" onClick={toggleMenu} />
+        {isMenuVisible ? (
+          <FaTimes className="menu" onClick={toggleMenu} />
+        ) : (
+          <FaBars className="menu" onClick={toggleMenu} />
+        )}
       </nav>
 
-      <div
-        className={`bg-white absolute hidden-menus ${
-          isMenuVisible ? "active" : ""
-        }`}
-      >
+      <div className={`hidden-menus ${isMenuVisible ? "active" : ""}`}>
         <ul className="text-black flex flex-col p-4 justify-evenly items-center gap-4 w-full">
           <li>
             <Link to="/home">
@@ -65,7 +65,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/cars">
+            <Link to="/booking">
               <h5>Cars</h5>
             </Link>
           </li>

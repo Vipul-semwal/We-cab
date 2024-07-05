@@ -4,6 +4,7 @@ import {
   Faq,
   MapImg,
   SecordBanner,
+  SilderCards,
   Testimonial,
   Things,
   Timeline,
@@ -16,7 +17,9 @@ function HomePage() {
       <Timeline />
       <WhyChose />
       <Testimonial />
+
       <MapImg />
+      <SilderCards />
       <SecordBanner />
       <Things />
       <Faq />

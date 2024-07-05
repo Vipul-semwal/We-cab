@@ -1,0 +1,28 @@
+/* My Skills */
+
+.progress {
+  height: 7px;
+  border-radius: 20px;
+}
+
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+.percent span {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888888;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.progress-bar {
+  text-align: left;
+
+  border-radius: 20px;
+  transition-duration: 3s;
+}

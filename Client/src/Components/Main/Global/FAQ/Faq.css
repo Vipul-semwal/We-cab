@@ -54,6 +54,18 @@ input[type="checkbox"]:checked ~ .accordion-content {
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  label {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+  }
+}
+
 @media all and (max-width: 426px) {
   .accordion {
     max-width: 91%;

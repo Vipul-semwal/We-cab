@@ -1,7 +1,23 @@
 .test-box {
   height: 32rem;
   width: 100%;
+  padding: 17px;
+  display: flex !important;
   border-radius: 10px;
+}
+
+#fake-test {
+  display: block;
+}
+
+#real-test {
+  display: none;
+}
+
+.test-box .cardImg {
+  width: 100%;
+  display: block;
+  margin: 0 auto; /* Center the image */
 }
 
 .test-box i {
@@ -50,6 +66,7 @@
   .test-box {
     height: 24rem;
     width: 100%;
+    padding: 10px;
     border-radius: 10px;
   }
 }
@@ -79,4 +96,15 @@
   .test-box i {
     font-size: 28px;
   }
+
+  #real-test {
+    display: none;
+  }
+
+  #fake-test {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 490px) {
 }

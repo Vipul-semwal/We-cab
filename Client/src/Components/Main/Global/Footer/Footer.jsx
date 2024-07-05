@@ -50,32 +50,33 @@ function Footer() {
               <div className="footer-contact">
                 <h3 className="text-xl font-bold mb-4">Quick Links</h3>
                 <div className="line mb-6"></div>
-                <p className="mb-2">
-                  <FaMinus className="mr-2" />
-                  Home
-                </p>
-                <p className="mb-2">
-                  <FaMinus className="mr-2" />
-                  Hotels
-                </p>
-                <p className="mb-2">
-                  <FaMinus className="mr-2" />
-                  Flights
-                </p>
-                <p className="mb-2">
-                  <FaMinus className="mr-2" />
-                  Trips
-                </p>
-                <p className="mb-2">
-                  <FaMinus className="mr-2" />
-                  Boats
-                </p>
-                <p className="mb-2">
-                  <Link to="next.html">
+                <Link to="/home">
+                  <p className="mb-2 flex items-center">
                     <FaMinus className="mr-2" />
-                    Contact Us
-                  </Link>
-                </p>
+                    Home
+                  </p>
+                </Link>
+
+                <Link to="/destination">
+                  <p className="mb-2 flex items-center">
+                    <FaMinus className="mr-2" />
+                    Destinations
+                  </p>
+                </Link>
+
+                <Link to="/booking">
+                  <p className="mb-2 flex items-center">
+                    <FaMinus className="mr-2" />
+                    Booking
+                  </p>
+                </Link>
+
+                <Link to="/overview">
+                  <p className="mb-2 flex items-center">
+                    <FaMinus className="mr-2" />
+                    Overview Location
+                  </p>
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/4 px-4">

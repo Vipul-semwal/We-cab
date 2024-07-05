@@ -1,0 +1,150 @@
+.car-box {
+  width: 50%;
+  height: auto;
+  background-color: #ffe7f1;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.bar-info {
+  background: white;
+  border-radius: 8px;
+  width: 400px;
+  padding: 10px;
+}
+
+.bar-info p {
+  font-size: 14px;
+  color: rgb(211, 211, 211);
+}
+
+.bar-info i {
+  font-size: 14px;
+}
+
+.upper-part {
+  margin-bottom: 30px;
+}
+
+.upper-part h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.upper-part h3 span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.icons-car {
+  font-size: 16px;
+}
+
+.icons-car i {
+  font-size: 11px;
+}
+
+.checks {
+  font-size: 11px;
+}
+
+.pink-btn {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #ee408a;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 50%;
+}
+.unbtn {
+  width: 50%;
+  font-weight: 500;
+}
+
+.car-back {
+  width: 100%;
+}
+.bar-info {
+  gap: 10px;
+}
+
+.cover-car h5 {
+  text-align: start;
+}
+
+.upper-part {
+  margin-top: 20px;
+}
+
+.main-banner {
+  gap: 30px;
+}
+
+.car-back {
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .bar-info {
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    gap: 0px;
+    padding: 10px 3px;
+  }
+
+  .pink-btn {
+    padding: 6px;
+    font-size: 12px;
+    color: white;
+    background-color: #ee408a;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 50%;
+  }
+
+  .bar-info svg {
+    font-size: 11px;
+    margin: 0px;
+  }
+
+  .bar-info p {
+    font-size: 10px;
+    margin: 0px 5px;
+    color: rgb(128 128 128);
+  }
+
+  .popup-h1 {
+    font-size: 12px;
+  }
+
+  .upper-part h3 span {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .upper-part h3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .bar-info svg {
+    font-size: 11px;
+  }
+
+  .upper-part svg {
+    font-size: 12px;
+  }
+
+  .upper-part p {
+    font-size: 12px;
+  }
+
+  .upper-part {
+    margin-bottom: 15px;
+  }
+
+  .car-box {
+    padding: 18px;
+  }
+}

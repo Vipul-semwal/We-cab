@@ -1,0 +1,52 @@
+.hidden-car {
+  display: none;
+}
+.cover-car h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+.input-se1 {
+  padding: 12px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cover-car h2 {
+    font-weight: 500;
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .hidden-inputs {
+    display: none;
+  }
+  .hidden-car {
+    display: block;
+  }
+
+  .cover-car p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .cover-car h2 {
+    font-weight: 600 !important;
+    font-size: 21px !important;
+  }
+
+  .car-back {
+    margin-top: 4px;
+  }
+  .main-banner {
+    gap: 1px;
+  }
+  .coutm-with {
+    width: 80%;
+  }
+}

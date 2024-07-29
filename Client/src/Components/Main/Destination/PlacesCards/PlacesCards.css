@@ -15,14 +15,14 @@
   color: white;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .place-black-btn {
-  padding: 9px 10px;
+  padding: 8px 10px;
   background-color: black;
   color: white;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 3px;
   font-weight: 500;
 }
@@ -63,8 +63,16 @@
   position: absolute;
   font-weight: 600;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.details-place p {
+  color: rgb(147, 147, 147);
+  font-size: 12px;
+}
+.pink-part {
+  background: #ffe7f1;
 }

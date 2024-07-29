@@ -19,7 +19,7 @@ function Navbar() {
     <header className="relative">
       <nav className="flex justify-between navbar fix-navbar items-center">
         <div className="logo">
-          <Link to="/">
+          <Link to="/home">
             <img width="100%" src="wecare_logo.svg" alt="logo" />
           </Link>
         </div>

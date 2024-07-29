@@ -7,10 +7,10 @@ function PlacesLists() {
       <div className="w-full">
         <div className="container-middem">
           <div className="flex justify-start flex-col mb-10">
-            <h2 className="mb-2 text-3xl font-medium">
+            <h2 className="mb-2 text-2xl sm:text-3xl  font-semibold">
               Explore Places along the way
             </h2>
-            <p>Finalize your booking in just a few click.</p>
+            <p className="">Finalize your booking in just a few click.</p>
           </div>
           <PlacesCards />
           <PlacesCards />

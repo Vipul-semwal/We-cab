@@ -70,12 +70,12 @@
   background-color: #ee408a;
   padding: 10px 30px;
   color: white;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .newbtn {
   background: #e7e7e7;
-  border-radius: 8px;
+  border-radius: 2px;
 
   padding: 10px 30px;
 }
@@ -156,11 +156,11 @@
     padding: 5px 20px;
     font-size: 11px;
     color: white;
-    border-radius: 8px;
+    border-radius: 2px;
   }
   .newbtn {
     background: #e7e7e7;
-    border-radius: 8px;
+    border-radius: 2px;
     font-size: 11px;
     padding: 5px 20px;
   }

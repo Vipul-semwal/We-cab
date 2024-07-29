@@ -29,6 +29,8 @@ import RatingsReviews from "./Main/PlaceOverview/RatingsReviews/RatingsReviews";
 import MoreInfo from "./Main/PlaceOverview/MoreInfo/MoreInfo";
 import ImageSection from "./Main/PlaceOverview/ImageSection/ImageSection";
 import SilderCards from "./Main/PlaceOverview/Silder/SilderCards";
+import UpperInputs from "./Main/Destination/UpperInputs/UpperInputs";
+import PlacesLists from "./Main/Destination/PlacesLists/PlacesLists";
 export {
   Loadable,
   Navbar,
@@ -60,4 +62,6 @@ export {
   MoreInfo,
   ImageSection,
   SilderCards,
+  UpperInputs,
+  PlacesLists,
 };

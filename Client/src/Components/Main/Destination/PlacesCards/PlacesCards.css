@@ -1,0 +1,70 @@
+.place-card-bg {
+  padding: 35px 4%;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: 0.5s ease-in-out;
+}
+
+.place-card-bg:hover {
+  background-color: #ffe7f1;
+}
+
+.place-pink-btn {
+  padding: 9px 10px;
+  background-color: #ee408a;
+  color: white;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.place-black-btn {
+  padding: 9px 10px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.pink-theme-btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  color: white;
+  background-color: #ee408a;
+  border-radius: 8px;
+}
+
+.gray-theme-btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  color: rgb(1, 1, 1);
+  background-color: #e7e7e7;
+  border-radius: 8px;
+}
+
+.main-place-img {
+  /* background: url("/Utility/boximg.png") no-repeat, center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.main-place-super {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the parent has a defined height */
+}
+
+.main-place-super h2 {
+  position: absolute;
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

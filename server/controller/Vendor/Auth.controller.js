@@ -92,20 +92,11 @@ async function SignIn(req, res) {
         ).session(session);
 
         if (updatedUser) {
-            res.cookie('token', accessToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production', // Set to true if using HTTPS
-                sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', // Set to 'None' if using cross-site cookies
-            });
-
-            res.cookie('refresh-token', refreshToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production', // Set to true if using HTTPS
-                sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', // Set to 'None' if using cross-site cookies
-            });
-            await session.commitTransaction();
+            req.session.token = accessToken;
+            req.session.refreshToken = refreshToken;
+            
             return res.status(200).json({ message: 'Successfully logged in', token: accessToken, refreshToken: refreshToken, success: true });
-        } else {
+        }  else {
             await session.abortTransaction();
             return res.status(500).json({ message: 'Failed to update user session', success: false, error: "faild to set refresh token" });
         }

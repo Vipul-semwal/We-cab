@@ -18,5 +18,11 @@ function GetUserIdFromCookie(token) {
 
 };
 
+const notifyAdmin = (message) => {
+    // Logic to notify the admin
+    console.log('Notify Admin:', message);
+};
 
-module.exports = { GetUserIdFromCookie }
+
+
+module.exports = { GetUserIdFromCookie,notifyAdmin }

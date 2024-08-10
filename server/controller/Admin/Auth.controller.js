@@ -33,6 +33,8 @@ async function CreateAdmin(req, res) {
 
 async function SignIn(req, res) {
     const { email, password } = req.body;
+    const session = await mongoose.startSession();
+    session.startTransaction();
 
     try {
         const admin = await AdminModel.findOne({ email });
@@ -52,29 +54,25 @@ async function SignIn(req, res) {
             { _id: admin._id },
             { $set: { refreshToken: refreshToken } },
             { new: true }
-        );
+        ).session(session);;
 
         if (updatedUser) {
-            res.cookie('token', accessToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production', // Set to true if using HTTPS
-                sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', // Set to 'None' if using cross-site cookies
-            });
-
-            res.cookie('refresh-token', refreshToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production', // Set to true if using HTTPS
-                sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', // Set to 'None' if using cross-site cookies
-            });
+            req.session.token = accessToken;
+            req.session.refreshToken = refreshToken;
 
             return res.status(200).json({ message: 'Successfully logged in', token: accessToken, refreshToken: refreshToken, success: true });
         } else {
-            return res.status(500).json({ message: 'Failed to update user session', success: false, error: 'Trouble in updating the refresh token' });
+            throw new Error('Failed to update user session')
         }
     } catch (error) {
+        await session.abortTransaction();
         console.error(error);
         return res.status(500).json({ message: 'Internal server error', success: false, error: 'Unknown error' });
     }
+    finally {
+        session.endSession();
+    }
+
 }
 
 

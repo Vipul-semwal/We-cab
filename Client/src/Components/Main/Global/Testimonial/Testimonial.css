@@ -32,11 +32,13 @@
 .test2 {
   background: url(/Utility/test1.jpg), no-repeat, center;
   background-size: cover;
+  margin: 0px 10px;
 }
 
 .test3 {
   background: url(/Utility/test3.jpg), no-repeat, center;
   background-size: cover;
+  margin: 0px 20px;
 }
 
 .test-box h3 {

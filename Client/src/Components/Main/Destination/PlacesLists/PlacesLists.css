@@ -1,0 +1,10 @@
+.container-middem {
+  margin-top: 10%;
+  padding: 10px 9%;
+}
+
+@media screen and (max-width: 460px) {
+  .container-middem {
+    padding: 10px 4%;
+  }
+}

@@ -1,11 +1,11 @@
 .main-hero {
   padding: 0 50px;
 }
+
 .main-head {
   font-size: 40px;
   color: white;
   font-weight: 600;
-
   text-align: center;
 }
 
@@ -15,10 +15,9 @@
   align-items: center;
   justify-content: center;
   height: 600px;
-  background: url("/Utility/bg.jpg") no-repeat, center;
-
-  /* background-position: center; */
   background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
 }
 
 .explore-btn {
@@ -47,11 +46,11 @@
   background-color: white;
   height: auto;
 }
+
 .top-1 {
   border-radius: 8px;
   background-color: white;
   color: black;
-  /* width: 100%; */
   border: 1px black solid;
   font-size: 14px;
   padding: 12px 34px;
@@ -61,8 +60,6 @@
   border-radius: 8px;
   background-color: black;
   color: white;
-  /* width: 100%; */
-  /* border: 1px black solid; */
   font-size: 14px;
   padding: 12px 34px;
 }
@@ -79,17 +76,15 @@
   font-size: 13px;
   outline: none;
   padding-left: 40px;
-  width: 100%; /* Make the input take full width */
+  width: 100%;
 }
 
-/* Optionally, you can add your own custom focus styles */
 .input-se:focus {
-  outline: none; /* Ensure no outline on focus */
-  /* Add any custom focus styles here, if needed */
+  outline: none;
 }
 
 .input-search {
-  width: 100%; /* Ensure the container also takes full width */
+  width: 100%;
 }
 
 .pin {
@@ -107,9 +102,6 @@
   transform: translateY(-50%);
   pointer-events: none;
 }
-
-/* .input-se::placeholder {
-    padding-left: 30px; /* Adjust this padding based on icon position */
 
 .results {
   font-size: 13px;

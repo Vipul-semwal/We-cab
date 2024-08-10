@@ -10,6 +10,9 @@
 }
 
 .navbar ul li {
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
   position: relative;
 }
 
@@ -32,8 +35,8 @@
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
-
-.navbar ul li h5:hover::after {
+.navbar ul li h5:hover::after,
+.navbar ul li.active h5::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

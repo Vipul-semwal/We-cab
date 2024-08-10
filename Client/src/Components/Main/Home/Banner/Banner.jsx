@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import {
-  FaBars,
-  FaMapMarkerAlt,
+  FaMapPin,
   FaExchangeAlt,
   FaUsers,
   FaSuitcaseRolling,
@@ -10,20 +8,40 @@ import {
   FaClock,
 } from "react-icons/fa";
 import "./Banner.css";
-import { FaMapPin } from "react-icons/fa6";
+
 function Banner() {
   const [mode, setMode] = useState("outstation");
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = [
+    "/Utility/bg.jpg",
+    "/Utility/bg2.jpg",
+    "/Utility/bg1.jpg",
+
+    // Add more image paths as needed
+  ];
 
   const toggleInputs = (newMode) => {
     setMode(newMode);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <section className="w-full main-hero relative">
-      <div className="hero rounded-lg">
+      <div
+        className="hero rounded-lg"
+        style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+      >
         <div className="content-main flex justify-center items-center flex-col">
           <h1 className="main-head p-3">
-            Ride with We <span className="text-pink-400">Care </span>Cab: Your
+            Ride with We <span className="text-pink-400">Care</span> Cab: Your
             Trusted
             <br />
             Partner for Safe and Convenient Travel

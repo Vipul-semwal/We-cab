@@ -5,19 +5,23 @@ import {
   KeyPoints,
   PinkCards,
   PlacesCover,
+  PlacesLists,
   Testimonial,
   Things,
   Timeline,
+  UpperInputs,
 } from "../../Components/export";
 
 function DestinationPage() {
   return (
     <>
-      <Hero />
-      <Timeline />
+      {/* <Hero /> */}
+      {/* <Timeline /> */}
 
-      <PlacesCover check={true} />
-      <PlacesCover check={false} />
+      {/* <PlacesCover check={true} /> */}
+      {/* <PlacesCover check={false} /> */}
+      <UpperInputs />
+      <PlacesLists />
       <KeyPoints />
       <Testimonial />
       <Things />

@@ -189,8 +189,8 @@ function CarsPopUp({ onClose }) {
           </div>
         </div>
         <hr />
-        <button onClick={onClose} className="mt-4 font-medium">
-          Close
+        <button onClick={onClose} className="mt-4 pink-btn font-medium">
+          Select
         </button>
       </div>
     </div>

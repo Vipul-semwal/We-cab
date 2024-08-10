@@ -10,12 +10,22 @@ import CarCard from "../../Global/CarCard/CarCard";
 import BlackBtn from "../../Global/BlackBtn/BlackBtn";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css"; // Import styles for react-phone-input-2
+import CarsPopUp from "../../Global/CarsPopUp/CarsPopUp"; // Ensure this path is correct
 
 function BookHero() {
   const [phone, setPhone] = useState("");
+  const [isPopupOpen, setIsPopupOpen] = useState(false); // State for popup
 
   const handlePhoneChange = (value, country) => {
     setPhone(value); // Store the entered phone number
+  };
+
+  const handlePopupOpen = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupOpen(false);
   };
 
   return (
@@ -48,18 +58,18 @@ function BookHero() {
                 },
               }}
             />
-
             <input
               className="input-se pl-[23px] mt-3"
               placeholder="Enter your email"
               type="text"
             />
           </div>
-          <BlackBtn title={"Next"} />
+          <BlackBtn title={"Next"} onClick={handlePopupOpen} />
         </div>
       </div>
 
-      <CarCard />
+      <CarCard onMoreOptionsClick={handlePopupOpen} />
+      {isPopupOpen && <CarsPopUp onClose={handlePopupClose} />}
       <div className="hidden-car w-full">
         <div className="inputs-main w-full flex items-center justify-center flex-col col-span-12 sm:col-span-8">
           <div className="grid coutm-with grid-cols-1 sm:grid-cols-2 gap-5 mt-1">
@@ -70,16 +80,32 @@ function BookHero() {
                 type="text"
               />
             </div>
-
             <div className="input-search">
-              <input
-                className="input-se1"
-                placeholder="Phone Number"
-                type="tel"
+              <PhoneInput
+                country={"us"} // Initial country selection
+                value={phone}
+                onChange={handlePhoneChange}
+                placeholder="Enter your phone number"
+                inputProps={{
+                  name: "phone",
+                  required: true,
+                  autoFocus: true,
+                  className: "input-se", // Apply custom class
+                  style: {
+                    padding: "12px",
+                    backgroundColor: "#f3f3f3",
+                    border: "none",
+                    borderRadius: "8px",
+                    fontSize: "13px",
+                    outline: "none",
+                    paddingLeft: "40px",
+                    width: "100%",
+                  },
+                }}
               />
             </div>
           </div>
-          <BlackBtn title={"Next"} />
+          <BlackBtn title={"Next"} onClick={handlePopupOpen} />
         </div>
         <div className="hidden sm:block sm:col-span-4"></div>
       </div>
